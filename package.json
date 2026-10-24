@@ -1,0 +1,40 @@
+{
+  "name": "eip-7702-delegation-checker-revoker",
+  "version": "1.4.0",
+  "description": "Multi-chain EIP-7702 delegation scanner and Type-4 (0x04) zero-address revocation CLI for Ethereum, Base, Arbitrum, Optimism, Polygon, and BNB Chain. Maintained by MEV DAO (https://mevdao.org)",
+  "main": "dist/check.js",
+  "type": "module",
+  "scripts": {
+    "check": "tsx src/check.ts",
+    "revoke": "tsx src/revoke.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "remove-eip-7702-delegation",
+    "revoke-eip-7702-delegation",
+    "eip-7702-sweeper",
+    "check-eip-7702-delegation-metamask",
+    "eip-7702",
+    "pectra",
+    "whitehat-rescue",
+    "mev-dao",
+    "viem"
+  ],
+  "homepage": "https://mevdao.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mevdao-org/eip-7702-delegation-checker-revoker.git"
+  },
+  "author": "MEV DAO <research@mevdao.org> (https://mevdao.org)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
