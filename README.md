@@ -14,7 +14,7 @@
 - **Complete EIP-7702 Security Guide:** **[How to Check and Remove a Malicious EIP-7702 Delegation](https://mevdao.org/blog/how-to-check-and-remove-a-malicious-eip-7702-delegation)**
 - **Approvals & Permit2 Revocation Guide:** **[How to Revoke Token Approvals and Permit2 Signatures](https://mevdao.org/blog/how-to-revoke-token-approvals-and-permit2-signatures)**
 - **Compromised Wallet Flashbots Guide:** **[How to Rescue Tokens from a Compromised Wallet with a Sweeper Bot (Flashbots Guide)](https://mevdao.org/blog/how-to-rescue-tokens-from-a-compromised-wallet-with-a-sweeper-bot-flashbots-guid)**
-- **24/7 Emergency Whitehat Desk:** **[Rescue Tokens from a Compromised Wallet — MEV DAO Sweeper Bot Rescue Service](https://mevdao.org/blog/rescue-tokens-from-a-compromised-wallet-sweeper-bot-rescue-service)**
+- **Already drained, or is a sweeper bot on your wallet?** See **[MEV DAO's sweeper bot rescue service](https://mevdao.org/blog/rescue-tokens-from-a-compromised-wallet-sweeper-bot-rescue-service)** (paid, Ethereum mainnet). The free Flashbots guide above covers the do-it-yourself route.
 - **Official Infrastructure Portal:** **[MEV DAO (mevdao.org)](https://mevdao.org)**
 
 ---
@@ -201,7 +201,7 @@ Standard token approval dashboards are built to revoke ERC-20 `approve()` allowa
 No! Clearing an EIP-7702 delegation (`0xef0100`) only removes the smart account code attached to your EOA. If you previously signed malicious ERC-20 `approve()` transactions or off-chain `Permit2` signatures, those allowances remain active in the respective token contracts. After revoking the EIP-7702 delegation, follow **[How to Revoke Token Approvals and Permit2 Signatures](https://mevdao.org/blog/how-to-revoke-token-approvals-and-permit2-signatures)** to audit and lockdown all token allowances.
 
 ### 7. What if I have high-value staked tokens or unclaimed airdrops stuck in an EIP-7702-infected wallet?
-If the attacker also possesses your private key, simply broadcasting a public revocation will alert their bot to re-delegate your wallet in the next block. You must execute an atomic **Flashbots bundle** that combines the Type-4 revocation, the claim/unstake call, and the token transfer in a single block. Contact **[MEV DAO's Whitehat Sweeper Rescue Desk](https://mevdao.org/blog/rescue-tokens-from-a-compromised-wallet-sweeper-bot-rescue-service)** for assisted atomic recovery.
+If the attacker also possesses your private key, simply broadcasting a public revocation will alert their bot to re-delegate your wallet in the next block. You must execute an atomic **Flashbots bundle** that combines the Type-4 revocation, the claim/unstake call, and the token transfer in a single block. If you'd rather not build that bundle yourself, see how an **[EIP-7702 sweeper rescue](https://mevdao.org/blog/rescue-tokens-from-a-compromised-wallet-sweeper-bot-rescue-service)** works with MEV DAO's paid Token Rescue Bot (Ethereum mainnet).
 
 ---
 
