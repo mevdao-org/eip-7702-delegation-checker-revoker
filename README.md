@@ -212,6 +212,9 @@ If the attacker also possesses your private key, simply broadcasting a public re
 - **[How to Revoke Token Approvals and Permit2 Signatures](https://mevdao.org/blog/how-to-revoke-token-approvals-and-permit2-signatures)**
 - **[How to Rescue Tokens from a Compromised Wallet with a Sweeper Bot (Flashbots Guide)](https://mevdao.org/blog/how-to-rescue-tokens-from-a-compromised-wallet-with-a-sweeper-bot-flashbots-guid)**
 - **[Rescue Tokens from a Compromised Wallet: MEV DAO Sweeper Bot Rescue Service](https://mevdao.org/blog/rescue-tokens-from-a-compromised-wallet-sweeper-bot-rescue-service)**
+- **[EIP-7702 Rescue vs Flashbots Bundles: Which Saves Your Tokens](https://mevdao.org/blog/eip-7702-rescue-vs-flashbots-bundles-saving-tokens)**
+- **[Wallet Drainer Approvals: Permit, setApprovalForAll and 7702](https://mevdao.org/blog/wallet-drainer-approvals-permit-setapprovalforall-7702)**
+- **[Field notes: check an address for an EIP-7702 delegation](https://mevdao-org.github.io/eip-7702-delegation-check.html)**
 
 ## License
 
